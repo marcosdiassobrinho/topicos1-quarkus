@@ -1,11 +1,7 @@
 package br.unitins.topicos1.resource;
 
-import java.net.http.HttpResponse;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 import javax.ws.rs.*;
@@ -13,7 +9,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import br.unitins.topicos1.model.Pessoa;
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import org.hibernate.TransactionException;
 
 @Path("/pessoas")
